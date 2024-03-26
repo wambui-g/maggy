@@ -1,0 +1,28 @@
+/* Animated text styling */
+.animated-text {
+    margin-top: 50px; /* Adjust the margin as needed */
+    text-align: center; /* Center the text */
+}
+
+.typing-text {
+    display: inline-block;
+    font-size: 2rem; /* Increase font size */
+    opacity: 0;
+    animation: type 0.5s forwards;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+/* Animation for typing each letter */
+@keyframes type {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}

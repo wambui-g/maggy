@@ -1,20 +1,38 @@
 body {
     padding: 0.5% 5% 0.5%;
 }
-.home {
-    background-color: aqua;
-}
+
+/*home section*/
 #home {
-    height: 90vh;
+    max-height: 100vh;
 }
 .home {
     background-image: ;
 }
+.space {
+    height: 20%;
+}
+
 .intro {
+    margin-top: 10px;
     padding: 5%;
+    /*background-color:#FBAA60 ;*/
+}
+
+/*about section*/
+#about{
+    height: 90vh;
+}
+.about {
+    margin-top: 10px;
+    padding: 5%;
+    background-color:#FBAA60 ;
 }
 .intro_text {
     padding-top: 5%;
+}
+.hello{
+
 }
 #about {
     height: 90vh;
