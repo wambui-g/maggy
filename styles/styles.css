@@ -24,6 +24,12 @@ body {
 #home {
 
 }
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .home {
+        height: auto; /* Adjust height to fit content on smaller screens */
+    }
+}
 .home {
     height: 70vh;
 }
@@ -82,6 +88,12 @@ body {
 #about{
     
 }
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .about {
+        height: auto; /* Adjust height to fit content on smaller screens */
+    }
+}
 .about {
     display: flex;
     flex-direction: column;
@@ -95,10 +107,12 @@ body {
 }
 .about img {
     padding-left: 1rem;
+    max-width: 20rem;
 }
 .headings {
     padding-bottom: 3rem 0;
     font-size: 3rem;
+    text-align: center;
 }
 .about div {
     display: flex;
@@ -114,6 +128,12 @@ body {
 }
 
 /* more section */
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .more {
+        height: auto; /* Adjust height to fit content on smaller screens */
+    }
+}
 .more {
     display: flex;
     flex-direction: column;
@@ -126,6 +146,7 @@ body {
 .more div {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .more p {
     padding: 2rem 2.5rem;
@@ -133,11 +154,13 @@ body {
 }
 .more img {
     width: 40rem;
+    padding-left: 1rem;
+    max-width: 40rem;
 }
 
 /* post-cards */
 .post-cards {
-
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -153,21 +176,37 @@ body {
     margin-top: 0.8rem;
 }
 
+.post-cards .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .cards {
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color:#FBAA60 ;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
     padding 3rem 3rem;
     height: 60vh;
     margin: 3rem;
+    max-width: 25rem; 
 }
 
 .cards img {
     padding-top: 1rem;
-    width: 20rem;
-    height: 30rem;
+    width: 25rem;
+    max-width: 100%; 
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .cards {
+        height: auto; /* Adjust height to fit content on smaller screens */
+    }
 }
 
 /*pop-cards*/
@@ -191,6 +230,9 @@ body {
     padding: 20px;
     border-radius: 5px;
   }
+.popcard img {
+    width: 25rem;
+}
 
 .close-btn {
     position: absolute;
@@ -202,7 +244,32 @@ body {
 .container {
     margin-top: 50px; /* Just for demo to create space for the card */
   }
-  
+/* publications */
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .publications {
+        height: auto; /* Adjust height to fit content on smaller screens */
+    }
+}
+.publications {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 3%;
+    height: 60vh;
+}  
+
+.publications hr {
+    border: 8px dashed #FBC490;
+    margin: 5rem 0;
+    width: 20%;
+}
+.publications div li {
+    padding-top: 2%;
+}
 
 /* contact section*/
 .contact {
