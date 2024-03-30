@@ -222,7 +222,8 @@ body {
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     .popcard {
-        height: 80%; /* Adjust height to fit content on smaller screens */
+        height: 70%; /* Adjust height to fit content on smaller screens */
+        width: 90%;
     }
 }
   
@@ -246,9 +247,6 @@ body {
     cursor: pointer;
   }
   
-.container {
-    margin-top: 50px; /* Just for demo to create space for the card */
-  }
 /* publications */
 
 /* Media query for smaller screens */
